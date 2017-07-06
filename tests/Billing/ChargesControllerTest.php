@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-use Acme\Billing\StripeBilling;
 use Acme\Billing\ChargesController;
 
 /**
@@ -11,22 +10,23 @@ use Acme\Billing\ChargesController;
 class ChargesControllerTest extends \PHPUnit_Framework_TestCase
 {
 
-	public function tearDown()
-	{
-		  Mockery::close();
-	}
-    
-      /** @test **/ 
-	function it_charges_with_the_stripe_service()
-	{
-         // Arrage
-         $billingService = Mockery::mock('Acme\Billing\Contracts\Billable');
-         $billingService->shouldReceive('charge')->once()->andReturn('done it');
+    public function tearDown()
+    {
+        Mockery::close();
+    }
 
- 	     $billing = new ChargesController($billingService);	
- 	     $result = $billing->store('data');
+    /** @test **/
+    public function it_charges_with_the_stripe_service()
+    {
+        // Arrage
+        $billingService = Mockery::mock('Acme\Billing\Contracts\Billable');
+        $billingService->shouldReceive('charge')->once()->andReturn('done it');
 
- 	     // Assert
- 	     self::assertEquals('done it', $result);
-	}
+        // Act
+        $billing = new ChargesController($billingService);
+        $result  = $billing->store('data');
+
+        // Assert
+        self::assertEquals('done it', $result);
+    }
 }
