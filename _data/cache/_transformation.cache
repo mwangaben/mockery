@@ -1,0 +1,42 @@
+<?php return array (
+  AOP_ROOT_DIR . '/src/Articles/Curl.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Articles/Curl.php',
+  ),
+  AOP_ROOT_DIR . '/src/Articles/Newsletter.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Articles/Newsletter.php',
+  ),
+  AOP_ROOT_DIR . '/src/Aspect/Post.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Aspect/Post.php',
+  ),
+  AOP_ROOT_DIR . '/src/Billing/Contracts/Billable.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Billing/Contracts/Billable.php',
+  ),
+  AOP_ROOT_DIR . '/src/Billing/ChargesController.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Billing/ChargesController.php',
+  ),
+  AOP_ROOT_DIR . '/src/System/Foo.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/System/Foo.php',
+  ),
+  AOP_ROOT_DIR . '/src/Trade/Seller.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Trade/Seller.php',
+  ),
+  AOP_ROOT_DIR . '/src/Trade/Buyer.php' => 
+  array (
+    'filemtime' => 1499023464,
+    'cacheUri' => AOP_CACHE_DIR . '/src/Trade/Buyer.php',
+  ),
+);
