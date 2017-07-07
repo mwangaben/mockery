@@ -29,4 +29,6 @@ class ChargesControllerTest extends \PHPUnit_Framework_TestCase
         // Assert
         self::assertEquals('done it', $result);
     }
+    
+    /** @test**/
 }
