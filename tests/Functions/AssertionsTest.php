@@ -47,7 +47,7 @@ class AssertionsTest extends \PHPUnit_Framework_TestCase
 	function it_asserts_if_the_needle_is_contained_in_the_haystack()
 	{
     	$this->assertContains('Mwanga', ['Mwanga', 'Mkinga', 'Mkota', 'Kulindwa']);	
-    	$this->assertContains('Foo', 'Foobar');	
+    	$this->assertContains('Foo', 'Foobar', true);	
 	}
 
 	  /** @test **/ 
@@ -75,5 +75,9 @@ class AssertionsTest extends \PHPUnit_Framework_TestCase
 		$dir = __DIR__ .'/../Aspect';
         $this->assertDirectoryExists($dir);		
 	}
+	
+	/** @test **/
+	
+	function it_checks_
 
 }
